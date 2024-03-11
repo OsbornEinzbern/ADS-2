@@ -4,9 +4,9 @@
 
 
 double pown(double value, uint16_t n) { //возведение числа в целую степень.
-    double res = value;
-    for (uint16_t i = 1; i < n; i++) {
-        res *= res;
+    double res = 1;
+    for (uint16_t i = 0; i < n; i++) {
+        res *= value;
     }
     return res;
 }
